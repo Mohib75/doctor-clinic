@@ -1,0 +1,25 @@
+.custom-shadow {
+	position: relative;
+}
+
+.custom-shadow::before {
+	content: "";
+	position: absolute;
+	top: -40px; /* Adjust these values to control the spread */
+	left: -25%; /* Adjust these values to control the spread */
+	bottom: 0; /* Adjust these values to control the spread */
+	right: -25%; /* Adjust these values to control the spread */
+	background: linear-gradient(179deg, rgba(0, 193, 157, 0) -25.42%, rgba(2, 0, 67, 0.47) 107.11%);
+	border-radius: inherit; /* This ensures the gradient shadow matches the parent border radius */
+	filter: blur(100px); /* Adjust the blur radius as needed */
+	z-index: -1;
+}
+
+.swiper-pagination-bullet-active {
+	background: #ffc637 !important;
+}
+
+.bg-custom-radial {
+	background: radial-gradient(ellipse at -35% 30%, #020043 0%, #020043 20%, rgba(2, 0, 67, 0.3) 100%);
+	background-blend-mode: overlay;
+}
